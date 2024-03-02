@@ -3,7 +3,7 @@
 
 /**
  * @author William FERRES
- * @depends uchroma tool for hardware communication.
+ * @depends polychromatic tool for hardware communication.
  * RazerRandomChroma, a simple tool to control the Chroma function of a Razer mouse.
  * Features random choice of effect for random with weighted choices to favor preferred effects.
  */
@@ -22,9 +22,9 @@ function random_breathing()
 	{
 		/* As there is no real random in the mouse breathing mode, we recreate it by using the static mode */
 		$color = getRandomColor();
-		system('uchroma fx static --color "' . $color . '"');
+		system('polychromatic-cli -z backlight -o static -c "' . $color . '"');
 		sleep(3);
-		system('uchroma fx static --color black');
+		system('polychromatic-cli -z backlight -o static -c "#000000"');
 		sleep(3);
 	}
 }

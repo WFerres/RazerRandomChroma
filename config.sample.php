@@ -3,7 +3,7 @@
 
 /**
  * @author William FERRES
- * @depends uchroma tool for hardware communication.
+ * @depends polychromatic tool for hardware communication.
  * RazerRandomChroma, a simple tool to control the Chroma function of a Razer mouse.
  * Features random choice of effect for random with weighted choices to favor preferred effects.
  */
@@ -30,6 +30,7 @@ $chosenColors = array('#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#0
 /* Put below the weights of the desired effect. To disable an effect, just comment the corresponding line */
 $effectsWeights['random_breathing'] = 20;
 $effectsWeights['pseudo_random_breathing'] = 10;
+$effectsWeights['pseudo_builtin_random_breathing'] = 15;
 
 $effectsWeights['random_reactive'] = 5;
 $effectsWeights['pseudo_random_reactive'] = 5;
@@ -46,6 +47,8 @@ $minTime['random_breathing'] = 60;
 $maxTime['random_breathing'] = 300;
 $minTime['pseudo_random_breathing'] = 60;
 $maxTime['pseudo_random_breathing'] = 180;
+$minTime['pseudo_builtin_random_breathing'] = 60;
+$maxTime['pseudo_builtin_random_breathing'] = 180;
 
 $minTime['random_reactive'] = 30;
 $maxTime['random_reactive'] = 60;

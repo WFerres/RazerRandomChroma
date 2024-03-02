@@ -3,7 +3,7 @@
 
 /**
  * @author William FERRES
- * @depends uchroma tool for hardware communication.
+ * @depends polychromatic tool for hardware communication.
  * RazerRandomChroma, a simple tool to control the Chroma function of a Razer mouse.
  * Features random choice of effect for random with weighted choices to favor preferred effects.
  */
@@ -54,7 +54,7 @@ function getRandomColor($subset = NULL)
 
 function getRandomDirection()
 {
-	return (internal_rand(1, 2) === 1 ? 'left' : 'right');
+	return internal_rand(1, 2);
 }
 
 function getRandomTime($min, $max)

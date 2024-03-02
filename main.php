@@ -3,7 +3,7 @@
 
 /**
  * @author William FERRES
- * @depends uchroma tool for hardware communication.
+ * @depends polychromatic tool for hardware communication.
  * RazerRandomChroma, a simple tool to control the Chroma function of a Razer mouse.
  * Features random choice of effect for random with weighted choices to favor preferred effects.
  */
@@ -22,6 +22,7 @@ require_once ROOT_DIR . 'includes' . DIRECTORY_SEPARATOR . 'utils.php';
 /* Pseudo random effects are the same as random effects but only features a subset of specifically chosen colors to let the most beautiful colors appear more frequently than unknown ones. */
 require_once ROOT_DIR . 'effects' . DIRECTORY_SEPARATOR . 'random_breathing.php';
 require_once ROOT_DIR . 'effects' . DIRECTORY_SEPARATOR . 'pseudo_random_breathing.php';
+require_once ROOT_DIR . 'effects' . DIRECTORY_SEPARATOR . 'pseudo_builtin_random_breathing.php';
 require_once ROOT_DIR . 'effects' . DIRECTORY_SEPARATOR . 'random_reactive.php';
 require_once ROOT_DIR . 'effects' . DIRECTORY_SEPARATOR . 'pseudo_random_reactive.php';
 require_once ROOT_DIR . 'effects' . DIRECTORY_SEPARATOR . 'spectrum.php';

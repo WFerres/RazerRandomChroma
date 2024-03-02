@@ -3,7 +3,7 @@
 
 /**
  * @author William FERRES
- * @depends uchroma tool for hardware communication.
+ * @depends polychromatic tool for hardware communication.
  * RazerRandomChroma, a simple tool to control the Chroma function of a Razer mouse.
  * Features random choice of effect for random with weighted choices to favor preferred effects.
  */
@@ -18,6 +18,6 @@ function wave()
 	global $minTime, $maxTime;
 	$duration = getRandomTime($minTime['wave'], $maxTime['wave']);
 	$direction = getRandomDirection();
-	system('uchroma fx wave --direction "' . $direction . '"');
+	system('polychromatic-cli -z backlight -o wave -p ' . $direction);
 	sleep($duration);
 }
